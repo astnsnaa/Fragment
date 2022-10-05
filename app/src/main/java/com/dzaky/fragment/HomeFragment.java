@@ -9,6 +9,7 @@ import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
@@ -25,6 +26,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-
+        if(view.getId() == R.id.btn_category) {
+            CategoryFragment mCategoryFragment = new CategoryFragment();
+            FragmentManager mFragmentManager = getParentFragmentManager();
+            mFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.frame_container, mCategoryFragment, CategoryFragment.class.getSimpleName())
+                    .addToBackStack(null)
+                    .commit();
+        }
     }
 }

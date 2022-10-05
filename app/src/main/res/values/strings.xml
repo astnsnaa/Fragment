@@ -3,4 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello ini Home Fragment</string>
     <string name="to_category">Ke Fragment Category</string>
+    <string name="this_category">Ini adalah Category</string>
+    <string name="category_lifestyle">Category Lifestyle</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_description">Category Description</string>
+    <string name="to_profile">ke Profile</string>
+    <string name="show_dialog">Tampilkan Dialog</string>
 </resources>
